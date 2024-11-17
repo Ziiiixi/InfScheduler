@@ -1,0 +1,16 @@
+[
+    {
+		"arch": "resnet152",
+		"kernel_file": "/home/zixi/orion/benchmarking/model_kernels/resnet152_32_fwd",
+		"num_kernels": 7356,
+		"num_iters": 20,
+		"args": {
+			"model_name": "resnet152",
+			"batchsize": 32,
+            "rps": 40,
+			"uniform": false,
+			"dummy_data": true,
+			"train": false
+		}
+	}
+]
