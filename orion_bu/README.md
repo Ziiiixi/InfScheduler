@@ -25,11 +25,14 @@ This implementation is based on project orion
 
 ## For code review
 
-Scheduler: The scheduler is located at src/scheduler/scheduler_eval.cpp, the sheduelr function is named busy_wait_profile, the priority queue is comment out in the current implementation.
+### Scheduler: 
+The scheduler is located at src/scheduler/scheduler_eval.cpp, the sheduelr function is named busy_wait_profile, the priority queue is comment out in the current implementation.
 
-Spatial Sharing: spatial sharing is implemented using tpc_mask, and we use set_mask and unset_mask in the scheduler to specify the TPC for running the kernel.
+### Spatial Sharing: 
+spatial sharing is implemented using tpc_mask, and we use set_mask and unset_mask in the scheduler to specify the TPC for running the kernel.
 
 
-Inference execution: run run_orion.py in artifact_evaluation/fig7/, we can specify the the combination of the model and batch size for model Mnet(mobilenetv2) and Rnet(Resnet152), and also the percentage of decrease for selecting the knee point and the critical op number in the script.
+### Inference execution:
+run run_orion.py in artifact_evaluation/fig7/, we can specify the the combination of the model and batch size for model Mnet(mobilenetv2) and Rnet(Resnet152), and also the percentage of decrease for selecting the knee point and the critical op number in the script.
 
 
